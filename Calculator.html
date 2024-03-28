@@ -33,8 +33,8 @@
         function add()
         {
             checkemptyfields();
-            var txtone = document.getElementById("first").value;
-            var txttwo = document.getElementById("second").value;
+            var txtone = parseInt(document.getElementById("first").value);
+            var txttwo = parseInt(document.getElementById("second").value);
             var result = txtone + txttwo;
             document.getElementById("res").value = result;
         }
