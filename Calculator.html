@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator App</title>
+    <link rel="stylesheet" href="CSS/style.css"/>
+    <script type="text/javascript">
+        function resetallfilds()
+        {
+            document.getElementById("first").value="";
+            document.getElementById("second").value="";
+            document.getElementById("res").value="";
+            document.getElementById("first").focus();
+        }
+        function setfocusload()
+        {
+            document.getElementById("first").focus();
+        }
+        function checkemptyfields()
+        {
+            if(document.getElementById("first").value.length==0)
+            {
+                alert("Please enter the First Input");
+                document.getElementById("first").focus();
+            }
+            else if(document.getElementById("second").value.length==0)
+            {
+                alert("Please enter your Second Input:");
+                document.getElementById("second").focus();
+            }
+        }
+        function add()
+        {
+            checkemptyfields();
+            var txtone = document.getElementById("first").value;
+            var txttwo = document.getElementById("second").value;
+            var result = txtone + txttwo;
+            document.getElementById("res").value = result;
+        }
+    </script>
+</head>
+<body onload="setfocusload()">
+    <div class="container">
+        <h3>Calculator App</h3>
+        <table>
+            <tr>
+                <td>Enter the First Number</td>
+                <td><input type="text" id="first"></td>
+            </tr>
+            <tr>
+                <td>Enter the Second Number</td>
+                <td><input type="text" id="second"></td>
+            </tr>
+            <tr>
+                <td>Addition</td>
+                <td><input type="text" id="res" readonly></td>
+            </tr>
+            <tr>
+                <td><button type="button" onclick="add()">Addition</button></td>
+                <td><button type="button" onclick="resetallfilds()">Reset</button></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

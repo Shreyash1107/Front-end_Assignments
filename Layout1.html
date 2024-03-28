@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Layout</title>
+    <style>
+        *
+        {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body
+        {
+            background-color:lightslategray;
+        }
+        .header
+        {
+            padding-top: 30px;
+            padding-bottom: 30px;
+            width: 100%;
+            min-height: 50px;
+            background-color: aqua;
+            padding-left: 20px;
+        }
+        .header img
+        {
+            width: 60px;
+            height: 60px;
+        }
+        .header h1
+        {
+            color: black;
+            font-size: 30px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight:bolder;
+        }
+        .menu
+        {
+           width: 100%;
+           height: 50px;
+           background-color: gray;
+           padding-top: 10px;
+           padding-bottom: 10px;
+           text-align:left;
+        }
+        .menu a
+        {
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bolder;
+            cursor: pointer;
+            margin-left: 20px;
+        }
+        .menu a:hover
+        {
+            color:chartreuse;
+        }
+        .Content
+        {
+            width: 80%;
+            height: 50px;
+            padding-top: 20px;
+        }
+        .Content h2
+        {
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            color: black;
+            padding-bottom: 20px;
+        }
+        .Content p
+        {
+            font-size: 30px;
+            color: darkblue;
+            background-color: cornflowerblue;
+            font-weight:lighter;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-align: justify;
+        }
+        .Section h3
+        {
+            padding-top: 10px;
+            font-size: 30px;
+            padding-bottom: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .Section p
+        {
+            color:darkred;
+            background-color: darkgray;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: lighter;
+        }
+        .right-div h4
+        {
+            font-size: 30px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .right-div p
+        {
+            font-style: italic;
+            font-weight: lighter;
+            color: chartreuse;
+            background-color: darkslategrey;
+        }
+        .footer
+        {
+           text-align: center;
+           width: 100%;
+          min-height: 50px;
+          margin-top: 10px;
+          padding-bottom: 10px;
+          padding-top: 10px;
+          font-size: 25px;
+          font-family:'Times New Roman', Times, serif;
+          font-weight: bolder;
+          background-color:lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <img src="Images/abstract-geometric-logo-or-infinity-line-logo-for-your-company-free-vector.jpg" alt="Company Symbol">
+            <h1>Company Logo</h1>
+        </div>
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Products</a>
+            <a href="#">Services</a>
+            <a href="#">Follow us</a>
+        </div>
+    </div>
+       <div class="Slider">
+        <img src="Images/jay-antol-Xbf_4e7YDII-unsplash.jpg" width="100%" height="300px">
+        <div class="Content">
+            <h2>
+                HTML Information
+            </h2>
+            <p>
+                HTML stands for HyperText Markup Language. It is used to design web pages using a 
+                markup language. HTML is a combination of Hypertext and Markup language. Hypertext 
+                defines the link between web pages. A markup language is used to define the text 
+                document within the tag which defines the structure of web pages. This language is 
+                used to annotate (make notes for the computer) text so that a machine can understand 
+                it and manipulate text accordingly. Most markup languages (e.g. HTML) are human-readable. 
+                The language uses tags to define what manipulation has to be done on the text.HTML uses 
+                predefined tags and elements which tell the browser how to properly display the content. 
+                Remember to include closing tags. If omitted, the browser applies the effect of the opening 
+                tag until the end of the page.CSS is a style sheet or presentational language that is used to 
+                layout, format, and style documents that are written in HTML to make them look beautiful. 
+                CSS is generally used with HTML to change the style of web pages and user interfaces. 
+                You can use CSS to change the color, backgrounds, borders, paddings, margins, fonts, 
+                icons, position and various other properties of HTML elements in a web document.Cascading
+                Style Sheets, fondly referred to as CSS, is a simple design language intended to simplify 
+                the process of making web pages presentable.
+            </p>
+            <div class="Section">
+                <h3>
+                    Information
+                </h3>
+                <p>
+                    My Name is Shreyash. I am an Engineer and Currently pursuing A Full STack Java Developer Course at 
+                    Giri's Tch Hub. I have Completed my Engineering from Pune Institute of Computer Technology where I 
+                    have secured Overall 7.12 CGPA in my Engineering. Also, I have done some Certification Courses such
+                    as Short Term Certification Course on OOP with C++, Data Science with Python and Currently doing a 
+                    Full Stack Java Developer Course. I am Searching for Job in IT filed. I am a Fast Learner and I love
+                    to learn New Things. My Interest are Watching Movies, Reading, Watching Cricket Matches, Also I enjoys
+                    listening to Music in my Free time.
+                </p>
+            </div>
+            <div class="right-div">
+                <h4>Current Affairs</h4>
+                <marquee direction="up">
+                    <p>
+                        1. The Indian Railways is embarking on a transformative journey with the upcoming launch of the Amrit 
+                        Bharat Express on December 30th. To be flagged off by Prime Minister Narendra Modi, these trains aim 
+                        to enhance the train travel experience for the common man.
+                        <br>
+                        2.Amidst growing global concerns about deforestation and the illicit trade in timber, the Indian 
+                        government has introduced its own national forest certification scheme. This initiative, known 
+                        as the Indian Forest and Wood Certification Scheme (IFWCS), aims to validate entities committed 
+                        to sustainable practices in forest management.
+                        <br>
+                        3.Coronavirus disease (COVID-19) is an infectious disease caused by the SARS-CoV-2 viruMost people 
+                        infected with the virus will experience mild to moderate respiratory illness and recover without 
+                        requiring special treatment. However, some will become seriously ill and require medical attention. 
+                        Older people and those with underlying medical conditions like cardiovascular disease, diabetes, 
+                        chronic respiratory disease, or cancer are more likely to develop serious illness. Anyone can get 
+                        sick with COVID-19 and become seriously ill or die at any age. The best way to prevent and slow 
+                        down transmission is to be well informed about the disease and how the virus spreads. Protect 
+                        yourself and others from infection by staying at least 1 metre apart from others, wearing a 
+                        properly fitted mask, and washing your hands or using an alcohol-based rub frequently. 
+                        Get vaccinated when its your turn and follow local guidance.
+                    </p>
+                </marquee>
+            </div>
+            <div class="footer">
+                <b>This website is designed by Shreyash Kawane
+                &copy 2023 Giri's Tech Hub. All Rights Reserved.
+                </b>
+            </div>
+           </div>
+       </div>
+        </div>
+    </div>
+    <div>
+    </div>
+</body>
+</html>

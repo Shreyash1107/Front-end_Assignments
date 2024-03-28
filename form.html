@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body
+        {
+            background-color: aquamarine;
+        }
+        .box
+        {
+            width: 700px;
+            height: 450px;
+            margin: 100px auto;
+            border: 6px solid black;
+            border-radius: 20px;
+            background-color:brown;
+            border-top-color:darkblue;
+            border-bottom-color:darkgreen;
+            border-left: none;
+            border-right: none;
+            box-shadow: 50px;
+        }
+        .box h1
+        {
+            text-align: center;
+            font-size: 25px;
+            font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: black;
+            padding-bottom: 20px;
+        }
+        .form-controls
+        {
+            width: 400px;
+            margin: auto;
+            height: auto;
+        }
+        label
+        {
+            width: 100%;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: black;
+        }
+        input[type=text]
+        {
+            font-size: 16px;
+            font-weight:lighter;
+            font-family: 'Times New Roman', Times, serif;
+            padding: 10px;
+            width: 100%;
+        }
+        input[type=pass]
+        {
+            font-size: 16px;
+            margin: 5px 0 22px 0;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: lighter;
+            padding: 10px;
+            width: 100%;
+        }
+        input[type=text]::placeholder
+        {
+            font-weight: bold;
+            font-size: 16px;
+        }
+        input[type=pass]::placeholder
+        {
+            font-weight: bold;
+            font-size: 16px;
+        }
+        h1:hover
+        {
+            -webkit-text-stroke: 1px;
+            -webkit-text-fill-color: transparent;
+            color:darkorange;
+        }
+        input[type=submit]
+        {
+            font-size: 16px;
+            font-weight: bold;
+            width: 100%;
+            background-color: chartreuse;
+            padding: 16px 22px;
+            border-radius: 16px;
+            cursor: pointer;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>Login Form</h1>
+        <div class="form-controls">
+            <label for="username">userid</label>
+            <input type="text" id="username" placeholder="Enter your userid" autocomplete="off">
+            <label for="pass">Password</label>
+            <input type="pass" id="Password" placeholder="Enter the Password">
+            <input type="submit" value="Login">
+        </div>
+    </div>
+    </div>
+</body>
+</html>
